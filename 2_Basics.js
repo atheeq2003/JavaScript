@@ -68,3 +68,37 @@ if(mode === "Dark") console.log("Mode: ",mode);
 console.log("No of Followers: ", instaProfile.no_Of_Followers, "Following: ", instaProfile.following);
 let result = instaProfile.no_Of_Followers > instaProfile.following ? "Popular" : "Not so Popular";
 console.log("Result: ", result);
+
+
+// Practice - 1
+let n = prompt("Enter a number to check if it is a multiple of 3: "); // Taking input from user
+if(n % 3 === 0) {
+    console.log(n, "is a multiple of 3");
+}
+else {
+    console.log(n, "is not a multiple of 3");
+}
+
+// Practice - 2
+let score = prompt("Enter the score: ");
+let grade;
+if(score >= 90 && score <= 100) {
+    grade = "A";
+}
+else if(score < 90 && score >= 70) {
+    grade = "B";
+}
+else if(score < 70 && score >= 60) {
+    grade = "C";
+}
+else if(score < 60 && score >= 50) {
+    grade = "D";
+}
+else if(score < 50 && score >= 0){
+    grade = "F";
+}
+else {
+    grade = "Invalid Score";
+}
+
+console.log(`Score: ${score},  Grade: ${grade}`);
