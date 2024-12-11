@@ -71,6 +71,7 @@ console.log("Result: ", result);
 
 
 // Practice - 1
+/*
 let n = prompt("Enter a number to check if it is a multiple of 3: "); // Taking input from user
 if(n % 3 === 0) {
     console.log(n, "is a multiple of 3");
@@ -78,8 +79,10 @@ if(n % 3 === 0) {
 else {
     console.log(n, "is not a multiple of 3");
 }
+*/
 
 // Practice - 2
+/*
 let score = prompt("Enter the score: ");
 let grade;
 if(score >= 90 && score <= 100) {
@@ -102,3 +105,4 @@ else {
 }
 
 console.log(`Score: ${score},  Grade: ${grade}`);
+*/
