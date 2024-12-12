@@ -73,6 +73,8 @@ console.log("Result: ", result);
 // Practice - 1
 /*
 let n = prompt("Enter a number to check if it is a multiple of 3: "); // Taking input from user
+// When user enters a number in the prompt it is stored as string in n. But as we are performing %, so javascript implicitly converts it 
+// to number for % operation
 if(n % 3 === 0) {
     console.log(n, "is a multiple of 3");
 }
