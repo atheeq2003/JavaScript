@@ -37,7 +37,7 @@ console.log("Size of String1 = ",size);
 
 // for in loop (Used for iterating objects -> Keys and values)
 for(let key in instaProfile) {
-    console.log(" Key   = ", key, "\n Value = ", instaProfile[key]);
+    console.log(` Key   =  ${key} \n Value =  ${instaProfile[key]}`);
 }
 
 // Practice 1
@@ -51,6 +51,7 @@ for(let i = 0; i <= 100; i++) {
 
 // Practice 2 
 // User Guessing Number
+/*
 let gameNumber = 45;
 let guessNumber = prompt("Guess the Number: ");
 console.log("guessedNumber: ", guessNumber);
@@ -61,3 +62,4 @@ do {
 // Not using !== because prompt always returns string, the number entered by user will be in string and when matching it will result to false;
 while(guessNumber != gameNumber);
 console.log("You Guessed the correct number!!");
+*/
