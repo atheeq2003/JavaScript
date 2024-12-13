@@ -30,3 +30,11 @@ for(let mark of marks) {
 }
 let avgMarks = sum / marks.length;
 console.log("Average Mark of class: ",avgMarks);
+
+// Practice - 2
+let itemsPrice = [250, 645, 300, 900, 50]
+console.log("Price of Items: ", itemsPrice);
+for(let val = 0; val < itemsPrice.length; val++) {
+    itemsPrice[val] -= (itemsPrice[val] / 10);
+}
+console.log("Price of Items after 10% discount: ", itemsPrice);
