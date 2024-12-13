@@ -50,13 +50,15 @@ console.log("Replaced All String is: ",replaceStr);
 // charAt 
 console.log("Char at 2: ", str.charAt(2));
 // also can be done with
-console.log(str[2]);
+console.log("Char at using str[2]: ", str[2]);
 // str[0] = "B" -> This cannot be done as string are immutable. Instead we should use replace. str.replace("A", "B");
 
 // Practice 1
+/*
 let fullName = prompt("Enter your fullname without spaces: ");
 console.log("Full Name: ", fullName);
 
 let userName = fullName.toLowerCase();
 userName = "@" + userName + userName.length;
 console.log(`Username: ${userName}`);
+*/
