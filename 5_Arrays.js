@@ -39,6 +39,7 @@ for(let val = 0; val < itemsPrice.length; val++) {
 }
 console.log("Price of Items after 10% discount: ", itemsPrice);
 
+
 // Array Methods
 // Some methods are mutable in arrays and some are not
 // Push() -> Mutable : Adds element to the end of an array
@@ -82,9 +83,37 @@ console.log("Heros: ", heroes);
 heroes.unshift("Doctor Strange");
 console.log("Heroes after Unshift: ", heroes);
 
-// shift() -> Removes element from start
+// shift() -> Mutable : Removes element from start
 heroes.shift();
 console.log("Heroes after Shift: ", heroes);
 
-// 
+// slice() -> Immutable : Returns part of array
+let slicedHeroes = heroes.slice(0, 3);
+console.log(slicedHeroes);
+console.log("Sliced Heroes: ", heroes.slice(0, 3));
 
+// splice() -> Mutable : change original array (add, remove, replace)
+// add Element
+heroes.splice(2, 0, "Green Lantern");
+console.log("Heroes after adding Green lantern at 2 index: ", heroes);
+// delete Element
+heroes.splice(3, 2);
+console.log("Heroes after deleting 2 elements: Hulk and Batman", heroes);
+// replace Element
+heroes.splice(3, 1, "Batman");
+console.log("Heroes after replacing 3rd index element Superman by deleting it and replace with Batman: ", heroes);
+
+
+// Practice - 2
+let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+console.log("Companies: ", companies);
+// a. Remove the first company from the array
+let removed = companies.shift();
+console.log("First Company: ", removed);
+console.log("After Removing First Company: ", companies);
+// b. Remove Uber & add Ola in its place
+companies.splice(1, 1, "Ola");
+console.log("After removing Uber and Adding Ola: ", companies);
+// c. Add Amazon at the end
+companies.push("Amazon");
+console.log("Adding Amazon at the end: ", companies);
