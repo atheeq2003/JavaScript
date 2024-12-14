@@ -38,3 +38,53 @@ for(let val = 0; val < itemsPrice.length; val++) {
     itemsPrice[val] -= (itemsPrice[val] / 10);
 }
 console.log("Price of Items after 10% discount: ", itemsPrice);
+
+// Array Methods
+// Some methods are mutable in arrays and some are not
+// Push() -> Mutable : Adds element to the end of an array
+let catBreeds = ["Persian", "Munchkin"];
+console.log("Cat Breeds: ", catBreeds);
+catBreeds.push("Fawn", "Calico");
+console.log("Cat Breeds after pushing into the array: ", catBreeds);
+
+// Pop() -> Mutable : pops the element from end of the array and returns the deleted element
+let deletedBreed = catBreeds.pop();
+console.log("Cat Breeds after pop: ", catBreeds);
+console.log("Deleted Breed = ", deletedBreed);
+
+// toString() -> Immutable : Converts the array into string with elements seperated by comma. Returns new string. 
+// Does not change the original array
+let evenNums = [2, 4, 6, 8, 10];
+console.log("Before toString(): ", evenNums);
+let evenNumsStr = evenNums.toString(); // Using variable to store the converted string as the method
+//  will return new string as it is mutable
+console.log("Using console.log(evenNums.toString()): ", evenNums.toString()); // Alternate method
+console.log("After String Conversion with new variable let evenNumsStr: ", evenNumsStr);
+
+// concat() -> Immutable : Concatenates 2 or more Arrays
+let marvelHeroes = ["Spider Man", "Iron Man", "Hulk"];
+console.log("Marvel Heros: ", marvelHeroes);
+let dcHeroes = ["Batman", "Superman"];
+console.log("DC Heros: ", dcHeroes);
+let indianHeroes = ["Krish", "Hero"];
+/* This code below will log out empty array cause concatenating and storing it into the heros array still
+   means that heros array which is empty is being changed here so it still returns empty array
+let heros = [];
+console.log(heros);
+marvelHeros.concat(dcHeros);
+console.log("Heros: ", heros);
+*/
+// This will work as it implicitly returns the new array in heros. You can also concat 2 or more arrays
+let heroes = marvelHeroes.concat(dcHeroes, indianHeroes);
+console.log("Heros: ", heroes);
+
+// Unshift() -> Mutable : Adds element to the start
+heroes.unshift("Doctor Strange");
+console.log("Heroes after Unshift: ", heroes);
+
+// shift() -> Removes element from start
+heroes.shift();
+console.log("Heroes after Shift: ", heroes);
+
+// 
+
