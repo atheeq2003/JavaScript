@@ -1,3 +1,4 @@
+import { countVowelsTwo } from "./6_Functions.js";
 let arr = [22, 14, 55, 22, 64];
 console.log(arr);
 console.log(arr.length);
@@ -117,3 +118,6 @@ console.log("After removing Uber and Adding Ola: ", companies);
 // c. Add Amazon at the end
 companies.push("Amazon");
 console.log("Adding Amazon at the end: ", companies);
+
+// calling countVowelsTwo from functions.js
+console.log(countVowelsTwo("rahaman"));
