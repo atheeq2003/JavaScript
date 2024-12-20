@@ -156,14 +156,15 @@ let marksNinety = studMarks.filter((value) => {
 console.log(marksNinety);
 
 // Practice - 5
+/*
 let n = prompt("Enter a number: ");
 let arr3 = [];
 for(let i=1; i <= n; i++) {
   arr3[i-1] = i;
 }
-console.log(arr3);
+console.log(arr3); [1, 2, 3, 4, 5]
 const sumofArr3 = arr3.reduce((prev, next) => {
-  return prev + next;
+  return prev + next; = 15
 });
 console.log("Sum of Array = ", sumofArr3);
 
@@ -171,4 +172,4 @@ const mulofArr3 = arr3.reduce((prev, next) => {
   return prev * next;
 });
 console.log("Multiplication of Array = ", mulofArr3);
-
+*/

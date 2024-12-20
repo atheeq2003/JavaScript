@@ -59,7 +59,7 @@ console.log("Deleted Breed = ", deletedBreed);
 let evenNums = [2, 4, 6, 8, 10];
 console.log("Before toString(): ", evenNums);
 let evenNumsStr = evenNums.toString(); // Using variable to store the converted string as the method
-//  will return new string as it is mutable
+//  will return new string as it is immutable
 console.log("Using console.log(evenNums.toString()): ", evenNums.toString()); // Alternate method
 console.log("After String Conversion with new variable let evenNumsStr: ", evenNumsStr);
 
@@ -69,15 +69,10 @@ console.log("Marvel Heros: ", marvelHeroes);
 let dcHeroes = ["Batman", "Superman"];
 console.log("DC Heros: ", dcHeroes);
 let indianHeroes = ["Krish", "Hero"];
-/* This code below will log out empty array cause concatenating and storing it into the heros array still
-   means that heros array which is empty is being changed here so it still returns empty array
-let heros = [];
-console.log(heros);
-marvelHeros.concat(dcHeros);
-console.log("Heros: ", heros);
-*/
 // This will work as it implicitly returns the new array in heros. You can also concat 2 or more arrays
-let heroes = marvelHeroes.concat(dcHeroes, indianHeroes);
+let heroes = [];
+console.log("Heros: ", heroes);
+heroes = marvelHeroes.concat(dcHeroes, indianHeroes);
 console.log("Heros: ", heroes);
 
 // Unshift() -> Mutable : Adds element to the start

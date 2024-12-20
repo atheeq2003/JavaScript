@@ -51,14 +51,17 @@ console.log("Replaced All String is: ",replaceStr);
 console.log("Char at 2: ", str.charAt(2));
 // also can be done with
 console.log("Char at using str[2]: ", str[2]);
+let replacedBtheeq = str.replace("A", "B")
+console.log(str);
+console.log(replacedBtheeq);
 // str[0] = "B" -> This cannot be done as string are immutable. Instead we should use replace. str.replace("A", "B");
 
 // Practice 1
 /*
-let fullName = prompt("Enter your fullname without spaces: ");
+let fullName = prompt("Enter your fullname without spaces: "); Atheeq
 console.log("Full Name: ", fullName);
 
-let userName = fullName.toLowerCase();
-userName = "@" + userName + userName.length;
+let userName = fullName.toLowerCase(); atheeq
+userName = "@" + userName + userName.length; @atheeq6
 console.log(`Username: ${userName}`);
 */

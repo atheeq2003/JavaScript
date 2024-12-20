@@ -55,11 +55,16 @@ for(let i = 0; i <= 100; i++) {
 let gameNumber = 45;
 let guessNumber = prompt("Guess the Number: ");
 console.log("guessedNumber: ", guessNumber);
-do {
-    guessNumber = prompt("Please Guess the Number again: ");
-    console.log("guessedNumber: ", guessNumber);
-}
+if(guessNumber == gameNumber) {
+    console.log("You Guessed the correct number!!");
+} 
+else {
+    do {
+        guessNumber = prompt("Please Guess the Number again: ");
+        console.log("guessedNumber: ", guessNumber);
+    }
 // Not using !== because prompt always returns string, the number entered by user will be in string and when matching it will result to false;
 while(guessNumber != gameNumber);
 console.log("You Guessed the correct number!!");
+}
 */

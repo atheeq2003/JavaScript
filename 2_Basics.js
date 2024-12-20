@@ -20,7 +20,7 @@ console.log("a === c: (With Type Comparison)", a === c);
 console.log("a != c: (Without Type Comparison)", a != c);
 // Here double equal to
 console.log("a !== c: (With Type Comparison)", a !== c);
-console.log("a < c: ", a <= c);
+console.log("a < c: ", a < c);
 console.log("a > b: ", a > b);
 
 // Increment and Decrement
@@ -46,7 +46,7 @@ let color;
 if(mode === "Dark") {
     color = "Black"
 } 
-else if(mode == "Blue") {
+else if(mode === "Blue") {
     color = "Blue";
 }
 else {
