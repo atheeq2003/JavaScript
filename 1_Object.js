@@ -10,3 +10,4 @@ export const instaProfile = {
 
 console.log(instaProfile);
 console.log("Username type: ", typeof(instaProfile.userName));
+console.dir(instaProfile);
