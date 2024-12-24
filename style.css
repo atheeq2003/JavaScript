@@ -6,3 +6,11 @@
     margin: 5px;
     text-align: center;
 }
+
+.paraClass1 {
+    color: crimson;
+}
+
+.paraClass2 {
+    background-color: bisque;
+}

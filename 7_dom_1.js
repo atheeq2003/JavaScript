@@ -5,7 +5,7 @@ console.log(document.body);
 console.dir(document.body.children[0]);
 console.log(document.body.children[0]);
 document.body.style.background = "lightyellow";
-document.body.children[0].style.background = "yellow";
+document.body.children[0].style.backgroundColor = "yellow";
 // getElementById
 let heading = document.getElementById("head2");
 console.dir(heading);
